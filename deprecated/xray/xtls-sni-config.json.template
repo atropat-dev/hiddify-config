@@ -152,6 +152,7 @@
         ],
         "decryption": "none"
       },
+
       "streamSettings": {
         "network": "ws",
         "security": "none",
@@ -552,6 +553,14 @@
           "domain": ["domain:TELEGRAM_FAKE_TLS_DOMAIN"],
           "outboundTag": "localhost-tgproxy"
         },
+        {
+        "ip": [
+          "geoip:private",
+          "geoip:ir"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
         {
           "type": "field",
           "inboundTag": ["sniproxy-in"],
